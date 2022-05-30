@@ -1,0 +1,256 @@
+/* Как я сказал, у меня были траблы и картинки не вставлялись через тег, поэтому пришлось прописывать вот так по-ебанутому, сорян, сделай адекватнее */
+#screen {
+  position: relative;
+  background: url(../pages/MainPage.jpg) no-repeat;
+  background-size: cover;
+}
+#screen-foot {
+  position: absolute;
+  top: 30%;
+}
+
+#why-us {
+  position: relative;
+  background: url(../pages/why-us.svg) no-repeat;
+  background-size: 100% auto;
+}
+
+#terminal-rectangle {
+  height: 500px;
+  width: 400px;
+}
+
+#btn {
+  z-index: 1;
+  color: #fff;
+  transition: ease-out 0.3s;
+
+  background: #5845cf;
+  box-shadow: 0px 10px 30px rgba(56, 29, 219, 0.2);
+  border-radius: 8px;
+  line-height: 20px;
+  position: relative;
+}
+
+#btn:hover {
+  color: #5845cf;
+  cursor: pointer;
+  background: #fff;
+}
+
+#btn::before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  /* left: 50%;
+  right: 50%; */
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #fff;
+}
+
+#btn:hover::before {
+  transition: 0.5s all ease;
+  /* left: 0;
+  right:0; */
+  opacity: 1;
+  z-index: -1;
+  border-radius: 8px;
+}
+
+#a1 {
+  background-image: url("img/phone.png");
+  background-size: cover;
+}
+#a2 {
+  background-image: url("img/controller.png");
+  background-size: cover;
+}
+#a3 {
+  background-image: url("img/data.png");
+  background-size: cover;
+}
+#a4 {
+  background-image: url("img/pc.png");
+  background-size: cover;
+}
+#a5 {
+  background-image: url("img/world.png");
+  background-size: cover;
+}
+#a6 {
+  background-image: url("img/code.png");
+  background-size: cover;
+}
+
+#b1 {
+  background-image: url("img/student.png");
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+#b2 {
+  background-image: url("img/map.png");
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+#b3 {
+  background-image: url("img/users.png");
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+#b4 {
+  background-image: url("img/hierarchy.png");
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+
+#gg {
+  background-image: url("gg.png");
+  background-size: cover;
+}
+@media only screen and (min-width: 1280px) {
+  #screen {
+    position: relative;
+    background: url(../pages/MainPage.jpg) no-repeat;
+
+    background-size: cover;
+  }
+
+  #mob-directions {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  #screen {
+    position: relative;
+    background: url(../pages/mob-fist-page.svg) no-repeat;
+    background-size: cover;
+  }
+  #pc-directions {
+    display: none;
+  }
+}
+
+#firstpic {
+  background-image: url("Frame.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 522px;
+  height: 430px;
+}
+#secondpic {
+  background-image: url("Group2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 588px;
+  height: 358px;
+}
+
+#thirdpic {
+  background-image: url("Group3.png");
+  background-repeat: no-repeat;
+  width: 520px;
+  background-size: contain;
+  height: 369px;
+}
+
+#course {
+  background-image: url("Course.png");
+  background-size: contain;
+  width: 1100px;
+  height: 632px;
+}
+
+#course1 {
+  background-image: url("Course1.svg");
+  width: 700px;
+  height: 500px;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0 20px 0 20px;
+}
+
+@media (max-width: 1366px) {
+  .container {
+    max-width: 840px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+input::placeholder {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgba(190, 190, 190, var(--tw-text-opacity));
+}
+
+input[type="text"] {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgba(107, 114, 128, var(--tw-text-opacity));
+}
+
+/*
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn,
+.dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+ */

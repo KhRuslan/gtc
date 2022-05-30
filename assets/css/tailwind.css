@@ -1,0 +1,73 @@
+
+@font-face {
+        font-family: SF-Black;
+        src: url(assets/fonts/SFProDisplay-Black.ttf);
+}
+    
+@font-face {
+    font-family: SF-Bold;
+    src: url(assets/fonts/SFProDisplay-Bold.ttf);
+}
+
+@font-face {
+    font-family: SF-Heavy;
+    src: url(assets/fonts/SFProDisplay-Heavy.ttf);
+}
+
+@font-face {
+    font-family: SF-Thin;
+    src: url(assets/fonts/SFProDisplay-Thin.ttf);
+}
+
+@font-face {
+    font-family: SF-Ultralight;
+    src: url(assets/fonts/SFProDisplay-Ultralight.ttf);
+}
+
+@font-face {
+    font-family: SF-Light;
+    src: url(assets/fonts/SFProDisplay-Light.ttf);
+}
+
+@font-face {
+    font-family: SF-Medium;
+    src: url(assets/fonts/SFProDisplay-Medium.ttf);
+}
+
+@font-face {
+    font-family: SF-Regular;
+    src: url(assets/fonts/SFProDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: SF-Semibold;
+    src: url(assets/fonts/SFProDisplay-Semibold.ttf);
+}
+
+
+
+
+@font-face {
+    font-family: Inter-ExtraBold;
+    src: url(assets/fonts/Inter-ExtraBold.ttf);
+}
+    
+@font-face {
+    font-family: Inter-SemiBold;
+    src: url(assets/fonts/Inter-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Inter-Bold;
+    src: url(assets/fonts/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: Inter-Regular;
+    src: url(assets/fonts/Inter-Regular.ttf);
+}
+
+
+    
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

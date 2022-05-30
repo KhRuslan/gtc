@@ -1,0 +1,293 @@
+
+#screen {
+  position: relative;
+  background: url(../pages/MainPage.jpg) no-repeat;
+  background-size: cover;
+}
+
+#screen-foot {
+  position: absolute;
+  top: 30%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.end_bg {
+  background: #141518;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 350px;
+}
+
+.end_title {
+  color: #ffffff;
+}
+
+.end_description {
+  color: #868788;
+}
+
+#why-us {
+  position: relative;
+  background: url(../pages/why-us.svg) no-repeat;
+  background-size: 100%;
+  display: block;
+}
+
+#terminal-rectangle {
+  height: 500px;
+  width: 400px;
+}
+
+#btn {
+  z-index: 1;
+  color: #fff;
+  transition: ease-out 0.3s;
+
+  background: #5845cf;
+  box-shadow: 0px 10px 30px rgba(56, 29, 219, 0.2);
+  border-radius: 8px;
+  line-height: 20px;
+  position: relative;
+  outline: none;
+}
+
+#btn:hover {
+  color: #5845cf;
+  cursor: pointer;
+  background: #fff;
+}
+
+#btn::before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #fff;
+}
+
+#btn:hover::before {
+  transition: 0.5s all ease;
+  opacity: 1;
+  z-index: -1;
+  border-radius: 8px;
+}
+
+#btn:active {
+}
+
+.faq {
+  height: 56px;
+  transition: all 100ms linear;
+}
+
+.faq-open {
+  height: 130px;
+  transition: all 100ms linear;
+}
+.answer {
+  height: 0;
+  transition: all 100ms linear;
+}
+
+.answer-open {
+  display: block;
+  transition: all 100ms linear;
+}
+
+
+#gg {
+  background-image: url("gg.png");
+  background-size: cover;
+}
+@media only screen and (min-width: 1280px) {
+  #screen {
+    position: relative;
+    background: url(../pages/MainPage.jpg) no-repeat;
+
+    background-size: cover;
+  }
+
+  #mob-directions {
+    display: none;
+  }
+
+  #mob-course1 {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  #mob-endCourse {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}
+
+@media only screen and(min-width:1020px) {
+  #contact-right {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  #navbarButton {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  #pc-endCourse {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  #contact {
+    background: #111214;
+  }
+
+  #screen {
+    position: relative;
+    background: url(../pages/mob-fist-page.svg) no-repeat;
+    background-size: cover;
+  }
+  #pc-directions {
+    display: none;
+    position: absolute;
+  }
+  #why-us {
+    position: relative;
+    background: url(../pages/why-us.svg) no-repeat center;
+    background-size: cover;
+  }
+
+  #firstpic {
+    background-image: url("Frame.png");
+    background-repeat: no-repeat;
+    width: 190px;
+    height: 146px;
+  }
+
+  #secondpic {
+    background-image: url("Group2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 220px;
+    height: 130px;
+  }
+
+  #thirdpic {
+    background-image: url("Group3.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    background-size: contain;
+    height: 150px;
+  }
+
+  #mob-terminal {
+    background: url(../pages/terminal.svg) no-repeat;
+    background-size: contain;
+  }
+
+  #course1 {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  #mob-course1 {
+    background-image: url("Course1.svg");
+    width: 400px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #reviews {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}
+
+#firstpic {
+  background-image: url("Frame.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 522px;
+  height: 430px;
+}
+#secondpic {
+  background-image: url("Group2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 588px;
+  height: 358px;
+}
+.answer {
+  color: #3c3c3c;
+  font-size: 18px;
+  opacity: 0;
+  max-height: 0px;
+  overflow-y: hidden;
+  transition: all 0.4s ease-out;
+}
+
+#thirdpic {
+  background-image: url("Group3.png");
+  background-repeat: no-repeat;
+  width: 520px;
+  background-size: contain;
+  height: 369px;
+}
+
+
+
+#course1 {
+  background-image: url("Course1.svg");
+  width: 700px;
+  height: 500px;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0 20px 0 20px;
+}
+
+@media (max-width: 1366px) {
+  .container {
+    max-width: 840px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+input::placeholder {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgba(190, 190, 190, var(--tw-text-opacity));
+}
+
+input[type="text"] {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgba(107, 114, 128, var(--tw-text-opacity));
+}

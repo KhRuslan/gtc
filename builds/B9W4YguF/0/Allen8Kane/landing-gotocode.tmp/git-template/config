@@ -1,0 +1,4 @@
+[fetch]
+	recurseSubmodules = false
+[http "https://gitlab.com"]
+	sslCAInfo = /root/landing/builds/B9W4YguF/0/Allen8Kane/landing-gotocode.tmp/CI_SERVER_TLS_CA_FILE
